@@ -60,7 +60,6 @@
 <body>
 
 <section class="lights">
-
 <div class="lightsDiv" id="redDiv"></div>
 <br>
 <div class="lightsDiv" class="yellowLight" id="yellowDiv" ></div>
@@ -68,10 +67,6 @@
 <div class="lightsDiv" class="greenLight" id="greenDiv" ></div>
 <br>
 <div class="buttonDiv"><button onclick="startLights()">Start trafikklys</button></div>
-
-
-<div id="app" ></div>
-
 </section>
 
 <script>
@@ -94,7 +89,7 @@ function redLight(){
 }
 
 function yellowLight(){
-    red.classList.remove('redLightCl');
+    red.classList.add('redLightCl');
     green.classList.remove('greenLightCl');
     yellow.classList.add('yellowLightCl');
 }
